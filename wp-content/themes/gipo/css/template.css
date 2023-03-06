@@ -1,0 +1,29 @@
+/* NAVBAR */
+.navmenu-text {
+    font-family: 'Jost', sans-serif;
+    color: #001438 !important;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .5px;
+    padding: 10px 30px 10px 5px;
+}
+
+.navdropdown-text {
+    font-family: 'Jost', sans-serif;
+    color: #001438 !important;
+}
+
+.dropdown-position {
+    margin-left: 6rem !important;
+}
+
+.drop:hover>.dropdown-menu{
+    display: block;
+}
+
+
+/* FOOTER */
+.bg-darkblue {
+    background-color: #001438;
+}
+
