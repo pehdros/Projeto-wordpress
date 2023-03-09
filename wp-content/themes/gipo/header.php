@@ -17,7 +17,7 @@
         <section class="">
             <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom ">
                 <div class="container">
-                    <a href="home.php" class="navbar-brand"><img class="" src="img/logotipo.png" alt="Logotipo"></a>
+                    <a href="#" class="navbar-brand"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt=""></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>

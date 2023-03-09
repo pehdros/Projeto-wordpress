@@ -13,15 +13,25 @@ function load_scripts(){
 
 add_action('wp_enqueue_scripts', 'load_scripts');
 
-// Registrar menu
-register_nav_menus(
-    array(
-        'my_main_menu' => 'Main Menu',
-        'footer_menu' => 'Main Footer',
-        'footer_menu2' => 'Main Footer 2',
-        'footer_menu3' => 'Main Footer 3',
-    )
-);
+// Função de configuração de Tema
+function wpcurso_config(){
+    // Registrar menu
+    register_nav_menus(
+        array(
+            'my_main_menu' => 'Main Menu',
+            'menu_blog' => 'Menu Blog',
+            'footer_menu' => 'Main Footer',
+            'footer_menu2' => 'Main Footer 2',
+            'footer_menu3' => 'Main Footer 3',
+        )
+    );
 
+    $args = array(
+        'height' => 225,
+        'width' => 1920
+    );
+    add_theme_support('custom-header', $args);
+}
+add_action('after_setup_theme','wpcurso_config', 0);
 
 ?>

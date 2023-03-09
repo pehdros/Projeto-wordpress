@@ -79,7 +79,7 @@
         <hr>
         <div class="row row-cols-1 row-cols-md-2 d-flex align-items-center">
             <div class="col d-flex align-items-center mb-4">
-                <a href="#"><img src="img/logotipo-footer.png" alt="Logotipo rodapé"></a>
+                <a href="#"><img src="<?php header_image();?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt=""></a>
                 <div>
                     <p class="text-muted ml-3 mt-3">
                         <i class="bi bi-c-circle"></i>
